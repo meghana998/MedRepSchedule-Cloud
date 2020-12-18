@@ -19,7 +19,7 @@ namespace MedicalRepresentativeSchedule.Providers
             {
                 _log.Info("Getting medicine stock");
                 var client = new HttpClient();
-                using (var response = await client.GetAsync("http://52.149.234.166/MedicineStockInformation"))
+                using (var response = await client.GetAsync("http://52.188.181.221/MedicineStockInformation"))
                 {
 
                     if (response.IsSuccessStatusCode)
